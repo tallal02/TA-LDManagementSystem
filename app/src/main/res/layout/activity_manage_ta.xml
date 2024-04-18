@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B322C"
+    tools:context=".ManageTA">
+
+
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage TA"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textColor="#FFC470"
+        android:textSize="17dp"
+        android:layout_marginTop="110dp"
+        android:layout_alignStart="@id/text2"
+        />
+
+    <EditText
+        android:id="@+id/edit5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="100dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="290dp"/>
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available TA for the Course"
+        android:textColor="#FFC470"
+        android:textSize="17dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#FFC470"
+        android:text="View"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="290dp"
+        />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Sections for the Course"
+        android:textColor="#FFC470"
+        android:textSize="17dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#FFC470"
+        android:text="View"
+        android:layout_marginTop="185dp"
+        android:layout_marginLeft="290dp"
+        />
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Section"
+        android:layout_marginTop="240dp"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:layout_alignStart="@id/text2"
+        />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Section"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="260dp"
+        android:layout_alignStart="@id/text3"
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:text="TA Allocation ID"
+        android:textColor="@color/white"
+        android:layout_alignStart="@id/text3"
+        android:textSize="17dp"
+        />
+
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter TA allocation ID"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="340dp"
+        android:layout_alignStart="@id/text4"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Allocation"
+        android:layout_alignStart="@id/text4"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:layout_marginTop="450dp"/>
+
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="DD//MM//YYYY"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="240dp"
+        android:textColorHint="@color/white"/>
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC470"
+        android:text="Assign TA"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp"
+        />
+
+</RelativeLayout>
