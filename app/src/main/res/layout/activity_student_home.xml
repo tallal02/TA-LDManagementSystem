@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentHome">
+
+    <ImageView
+        android:id="@+id/fastLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/FAST"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="TA/LD Management System"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textColor="#4793AF"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faculty View"
+        android:textColor="#DD5746"
+        android:textSize="15dp"
+        android:layout_alignStart="@+id/fastLogo"
+        android:layout_marginTop="200dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="#DBD8DD">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                />
+
+
+            <Button
+                android:id="@+id/viewTask1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="View Tasks" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="#DBD8DD">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+
+            <Button
+                android:id="@+id/checkAtt1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Check Attendance" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="#DBD8DD">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+
+            <Button
+                android:id="@+id/update1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Update Personal Info" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="#DBD8DD">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+
+            <Button
+                android:id="@+id/checkFeed1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Check Feedback" />
+        </LinearLayout>
+
+    </GridLayout>
+
+
+
+</RelativeLayout>
