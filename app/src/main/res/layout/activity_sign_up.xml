@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/textViewSignUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="TA/LD\nManagement System"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#831037"
+        android:textSize="24sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSignUpTitle"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="20dp"
+        android:text="Sign Up"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupText"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="20dp"
+        android:text="Name"
+        android:textColor="#6A5A5A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Name"
+        android:background="@drawable/edittext_custom_background"
+        android:padding="12dp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:text="Email"
+        android:textColor="#6A5A5A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLabel"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Email"
+        android:background="@drawable/edittext_custom_background"
+        android:padding="12dp"
+        android:inputType="textEmailAddress" />
+
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:text="Password"
+        android:textColor="#6A5A5A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLabel"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter password"
+        android:background="@drawable/edittext_custom_background"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/contactnumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:text="Contact Number"
+        android:textColor="#6A5A5A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactnumberLabel"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Contact Number"
+        android:background="@drawable/edittext_custom_background"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/roleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContact"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:text="Role"
+        android:textColor="#6A5A5A"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/editTextRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roleLabel"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/spinner_background"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:spinnerMode="dropdown"/>
+
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@id/editTextRole"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        android:background="@drawable/button_custom_background"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+
+</RelativeLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,9 +12,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
-        android:text="              TA/LD\nManagement System"
+        android:text="TA/LD\nManagement System"
         android:textColor="#FFA500"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/logintext"
@@ -23,21 +23,23 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewTitle"
         android:layout_marginTop="42dp"
+        android:layout_marginLeft="20dp"
         android:fontFamily="sans-serif-black"
         android:text="Login"
         android:textColor="#000000"
-        android:textSize="22dp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/emailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/logintext"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="32dp"
         android:fontFamily="sans-serif"
         android:text="Email"
         android:textColor="#6A5A5A"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -45,31 +47,38 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/emailText"
         android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="sans-serif"
-        android:background="@android:drawable/editbox_background"
-
         android:hint="Enter email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/edittext_custom_background" />
 
     <TextView
         android:id="@+id/passwordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextEmail"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif"
         android:text="Password"
         android:textColor="#6A5A5A"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/passwordText"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="12dp"
         android:hint="Enter password"
         android:inputType="textPassword"
-        android:layout_below="@id/passwordText"
-        android:background="@android:drawable/editbox_background"/>
+        android:background="@drawable/edittext_custom_background"/>
 
     <TextView
         android:id="@+id/textViewForgotPassword"
@@ -79,7 +88,7 @@
         android:textColor="#FFA500"
         android:layout_below="@id/editTextPassword"
         android:layout_marginTop="8dp"
-        android:layout_alignParentEnd="true"/>
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/buttonLogin"
@@ -88,10 +97,13 @@
         android:text="Login"
         android:layout_below="@id/textViewForgotPassword"
         android:layout_marginTop="26dp"
-        android:textSize="20dp"
-        android:background="@drawable/rounded_button_background"
-
-        android:textColor="#E8E6E6"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:backgroundTint="#E68A00"
+        android:background="@drawable/button_custom_background"
+        android:textColor="#FFFFFF"/>
 
     <TextView
         android:id="@+id/signup"
@@ -101,7 +113,7 @@
         android:textStyle="bold"
         android:textColor="#FFA500"
         android:layout_below="@id/buttonLogin"
-        android:layout_marginTop="160dp"
-        android:layout_marginLeft="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
         />
 </RelativeLayout>
