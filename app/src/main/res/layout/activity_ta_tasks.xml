@@ -1,139 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StudentHome">
+    android:background="#DCDCDC">
 
-    <ImageView
-        android:id="@+id/fastLogo"
-        android:layout_width="360dp"
-        android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/FastLogo" />
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center_horizontal"
-        android:text="TA/LD\nManagement System"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        android:textColor="#4793AF"
-        />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Student View"
-        android:textColor="#DD5746"
-        android:textSize="15dp"
-        android:layout_alignStart="@+id/fastLogo"
-        android:layout_marginTop="200dp"/>
-
-    <GridLayout
+    <!-- Title section with background -->
+    <LinearLayout
+        android:id="@+id/titleSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text2"
-        android:rowCount="2"
-        android:columnCount="2"
-        android:padding="16dp">
+        android:orientation="vertical"
+        android:background="#872409"
+        android:padding="26dp">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:background="#DBD8DD">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Tasks"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/subtitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tallal Eatazaz"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="15sp"
+            android:textColor="#E3D6D6" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                />
-
-
-            <Button
-                android:id="@+id/assign1"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:text="View Tasks" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:background="#DBD8DD">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp" />
-
-
-            <Button
-                android:id="@+id/Feed1"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="12dp"
-                android:text="Check Attendance" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:background="#DBD8DD">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp" />
-
-
-            <Button
-                android:id="@+id/manage1"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:text="Update Info" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:background="#DBD8DD">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp" />
-
-
-            <Button
-                android:id="@+id/giveFeed1"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="13dp"
-                android:text="Check Feedback" />
-        </LinearLayout>
-
-    </GridLayout>
+    <!-- Task list section -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleSection"
+        android:layout_above="@+id/navigation_bar"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
 
     <LinearLayout
         android:id="@+id/navigation_bar"
@@ -247,6 +156,5 @@
 
         </LinearLayout>
     </LinearLayout>
-
 
 </RelativeLayout>

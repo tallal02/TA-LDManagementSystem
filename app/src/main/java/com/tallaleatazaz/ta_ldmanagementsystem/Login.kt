@@ -16,7 +16,7 @@ class Login : AppCompatActivity() {
         // Set an OnClickListener to it
         signUpTextView.setOnClickListener {
             // Create an Intent to start the SignUp activity
-            val intent = Intent(this, ViewProfile::class.java)
+            val intent = Intent(this, TAFeedback::class.java)
             // Start the SignUp activity
             startActivity(intent)
         }
