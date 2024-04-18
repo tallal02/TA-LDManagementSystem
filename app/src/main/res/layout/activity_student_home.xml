@@ -8,19 +8,20 @@
 
     <ImageView
         android:id="@+id/fastLogo"
-        android:layout_width="wrap_content"
+        android:layout_width="357dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/FAST"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        />
+        android:src="@drawable/FAST" />
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:text="TA/LD Management System"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:text="TA/LD\nManagement System"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp"
         android:textColor="#4793AF"
@@ -30,7 +31,7 @@
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Faculty View"
+        android:text="Student View"
         android:textColor="#DD5746"
         android:textSize="15dp"
         android:layout_alignStart="@+id/fastLogo"
@@ -57,7 +58,7 @@
 
 
             <Button
-                android:id="@+id/viewTask1"
+                android:id="@+id/assign1"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -79,12 +80,13 @@
 
 
             <Button
-                android:id="@+id/checkAtt1"
+                android:id="@+id/Feed1"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black"
+                android:textSize="12dp"
                 android:text="Check Attendance" />
         </LinearLayout>
 
@@ -100,13 +102,13 @@
 
 
             <Button
-                android:id="@+id/update1"
+                android:id="@+id/manage1"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black"
-                android:text="Update Personal Info" />
+                android:text="Update Info" />
         </LinearLayout>
 
         <LinearLayout
@@ -121,17 +123,130 @@
 
 
             <Button
-                android:id="@+id/checkFeed1"
+                android:id="@+id/giveFeed1"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black"
+                android:textSize="13dp"
                 android:text="Check Feedback" />
         </LinearLayout>
 
     </GridLayout>
 
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#09A1BB"
+        android:elevation="1dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/profilebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_profile"
+                    android:backgroundTint="#0E0E0E"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#020202"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/homebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_home"
+                    android:backgroundTint="#070707"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="#101212"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/feedbackbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_feedback"
+                    android:backgroundTint="#111212"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback"
+                    android:textColor="#111212"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/taskbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_tasks"
+                    android:backgroundTint="#090909"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tasks"
+                    android:textColor="#0C0C0C"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
 
 </RelativeLayout>

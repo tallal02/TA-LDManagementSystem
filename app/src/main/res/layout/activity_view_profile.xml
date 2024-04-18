@@ -155,7 +155,7 @@
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:textSize="20sp"
-            android:background="@drawable/button_custom_background"
+            android:backgroundTint="#FFC470"
             android:textColor="#FFFFFF"/>
 
     </LinearLayout>

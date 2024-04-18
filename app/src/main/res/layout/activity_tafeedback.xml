@@ -1,104 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GiveFeedback"
-    android:background="#8B322C">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Feedback"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Faculty View"
-        android:textColor="#FFC470"
-        android:textSize="17dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="50dp"/>
-
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TA Roll No"
-        android:layout_marginTop="200dp"
-        android:textColor="@color/white"
-        android:textSize="17dp"
-        android:layout_alignStart="@id/text2"
-        />
-
-    <EditText
-        android:id="@+id/edit1"
+    <!-- Upper third with red background and title -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:hint="Enter Student's Roll Number"
-        android:textColorHint="@color/white"
-        android:layout_marginTop="220dp"
-        android:layout_alignStart="@id/text3"
-        />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#872409"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
-        android:text="TA Subject Code"
-        android:textColor="@color/white"
-        android:layout_alignStart="@id/text3"
-        android:textSize="17dp"
-        />
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Feedback"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp" />
 
+        <TextView
+            android:id="@+id/subtitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tallal Eatazaz"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="-30dp"
+            android:textSize="15sp"
+            android:textColor="#E3D6D6" />
 
-    <EditText
-        android:id="@+id/edit2"
+    </LinearLayout>
+
+    <!-- Lower two-thirds with white background and messages -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter the subject code"
-        android:textColorHint="@color/white"
-        android:layout_marginTop="300dp"
-        android:layout_alignStart="@id/text4"
-        android:layout_marginRight="20dp"
-        />
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#FDC757"
+        android:orientation="vertical">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/cross"
+            android:layout_gravity="center"
+            android:layout_marginRight="-180dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/messageOneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saad Salman\nNice Work Done for assignment 3"
+            android:textColor="#000000"
+            android:padding="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:layout_gravity="center"/>
 
-    <EditText
-        android:id="@+id/edit3"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:background="@drawable/rounded"
-        android:hint="Type your feedback"
-        android:layout_marginRight="20dp"
-        android:layout_alignStart="@id/text4"
-        android:layout_marginTop="380dp"
-        android:padding="5dp"
+        <TextView
+            android:id="@+id/messageTwoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_background"
+            android:text="Saad Salman\nI need you to hurry up on the quiz 3 for section A"
+            android:textColor="#000000"
+            android:padding="16dp"
+            android:layout_margin="8dp" />
 
-        />
-
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFC470"
-        android:layout_below="@+id/edit3"
-        android:text="Submit Feedback"
-        android:textSize="17dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        />
-
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
@@ -211,4 +189,5 @@
 
         </LinearLayout>
     </LinearLayout>
-</RelativeLayout>
+
+</LinearLayout>

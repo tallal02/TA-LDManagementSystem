@@ -101,8 +101,7 @@
         android:layout_marginEnd="20dp"
         android:textSize="20sp"
         android:padding="12dp"
-        android:backgroundTint="#E68A00"
-        android:background="@drawable/button_custom_background"
+        android:backgroundTint="#FFC470"
         android:textColor="#FFFFFF"/>
 
     <TextView
