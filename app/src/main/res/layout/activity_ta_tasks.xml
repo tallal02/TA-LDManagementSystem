@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="#DCDCDC">
 
-    <!-- Title section with background -->
     <LinearLayout
         android:id="@+id/titleSection"
         android:layout_width="match_parent"

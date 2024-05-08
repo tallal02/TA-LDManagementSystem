@@ -11,8 +11,7 @@
         android:layout_width="360dp"
         android:layout_height="86dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/FastLogo" />
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/text1"
