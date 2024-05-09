@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        handler.postDelayed(navigateToLogin, 5000) // Delay in milliseconds (5 seconds)
+        handler.postDelayed(navigateToLogin, 1000) // Delay in milliseconds (5 seconds)
     }
 
     override fun onDestroy() {
