@@ -54,7 +54,7 @@ class SignUp : AppCompatActivity() {
     }
 
     private fun signUp(email: String, name: String, pass: String, contact: String, role: String) {
-        val url = "http://192.168.18.28/signup.php"
+        val url = "http://192.168.18.237/signup.php"
         val requestQueue = Volley.newRequestQueue(this)
 
         val stringRequest = object : StringRequest(Request.Method.POST, url,
