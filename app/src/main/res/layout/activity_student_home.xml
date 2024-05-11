@@ -104,7 +104,7 @@
 
 
             <Button
-                android:id="@+id/manage1"
+                android:id="@+id/updateinfobtn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

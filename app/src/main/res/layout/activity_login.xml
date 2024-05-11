@@ -92,7 +92,7 @@
         android:text="Forgot your password?"
         android:textColor="#FFA500"
         android:layout_below="@id/editTextPassword"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:layout_centerHorizontal="true"/>
 
     <Button
