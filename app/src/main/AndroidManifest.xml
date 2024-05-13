@@ -21,9 +21,7 @@
             android:exported="false"
             android:icon="@drawable/fastlogo"
             android:label="@string/app_name"/>
-        <activity
-            android:name=".ViewTaskAllocation"
-            android:exported="false" />
+
 
         <receiver
             android:name=".NetworkStateReceiver"
@@ -42,26 +40,37 @@
         </service>
 
 
-
+        <activity
+            android:name=".ViewTaskAllocation"
+            android:exported="false" />
         <activity
             android:name=".TaTasks"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".fctGuestHome"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".gstEditProfile"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".gstGiveFeedBack"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".gstManageTA"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".gstTaTasks"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".gstViewProfile"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".GuestAssignTasks"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".stdGuestHome"
-            android:exported="false" /><activity
+            android:exported="false" />
+        <activity
             android:name=".gstTaFeedBack"
             android:exported="false" />
         <activity
@@ -93,9 +102,6 @@
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="false" />
-        <activity
-            android:name=".ViewTaskAllocation"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
