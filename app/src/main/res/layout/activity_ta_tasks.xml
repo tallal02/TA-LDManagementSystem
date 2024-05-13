@@ -33,16 +33,25 @@
     </LinearLayout>
 
     <!-- Task list section -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tasksRecyclerView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/titleSection"
-        android:layout_above="@+id/navigation_bar"
-        android:background="#FFFFFF"
-        android:padding="8dp"
-        android:clipToPadding="false"/>
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1">
 
+        <LinearLayout
+            android:id="@+id/dynamic_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Dynamic TextViews will be added here -->
+        </LinearLayout>
+    </ScrollView>
     <LinearLayout
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"

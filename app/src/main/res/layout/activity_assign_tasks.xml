@@ -29,34 +29,17 @@
         android:layout_marginLeft="50dp"/>
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/Task_allocations"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:backgroundTint="#FFC470"
-        android:text="View"
+        android:layout_marginLeft="250dp"
         android:layout_marginTop="125dp"
-        android:layout_marginLeft="250dp"
-        />
-
-    <TextView
-        android:id="@+id/text5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Assigned Tasks"
-        android:textColor="#FFC470"
-        android:textSize="17dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="50dp"/>
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
         android:backgroundTint="#FFC470"
         android:text="View"
-        android:layout_marginTop="175dp"
-        android:layout_marginLeft="250dp"
-        />
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
 
 
     <TextView
@@ -74,19 +57,19 @@
         android:id="@+id/edit1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@id/text3"
+        android:layout_marginTop="240dp"
         android:layout_marginRight="20dp"
         android:hint="Enter Task Name"
         android:textColorHint="@color/white"
-        android:layout_marginTop="240dp"
-        android:layout_alignStart="@id/text3"
-        />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:text="TA Allocation ID"
+        android:text="Subject ID"
         android:textColor="@color/white"
         android:layout_alignStart="@id/text3"
         android:textSize="17dp"
@@ -97,12 +80,12 @@
         android:id="@+id/edit2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter TA allocation ID"
-        android:textColorHint="@color/white"
-        android:layout_marginTop="320dp"
         android:layout_alignStart="@id/text4"
+        android:layout_marginTop="320dp"
         android:layout_marginRight="20dp"
-        />
+        android:hint="Enter Subject ID"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white" />
 
 
     <EditText
@@ -129,13 +112,14 @@
         android:layout_marginTop="500dp"/>
 
     <EditText
-        android:id="@+id/edit4"
+        android:id="@+id/deadline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="DD//MM//YYYY"
-        android:layout_marginTop="490dp"
         android:layout_marginLeft="240dp"
-        android:textColorHint="@color/white"/>
+        android:layout_marginTop="490dp"
+        android:hint="YYYY/MM/DD"
+        android:textColorHint="@color/white"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
     <Button
@@ -147,7 +131,7 @@
         android:textSize="17dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/edit4"
+        android:layout_below="@+id/deadline"
         />
 
     <LinearLayout
@@ -181,7 +165,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_profile"
-                    android:backgroundTint="#0E0E0E"/>
+                    android:backgroundTint="#0E0E0E"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -204,7 +189,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_home"
-                    android:backgroundTint="#070707"/>
+                    android:backgroundTint="#070707"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -227,7 +213,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_feedback"
-                    android:backgroundTint="#111212"/>
+                    android:backgroundTint="#111212"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -250,7 +237,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_tasks"
-                    android:backgroundTint="#090909"/>
+                    android:backgroundTint="#090909"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"

@@ -18,7 +18,7 @@ class StudentHome : AppCompatActivity() {
         val updateinfobtn = findViewById<Button>(R.id.updateinfobtn)
         val email1 = FirebaseAuth.getInstance().currentUser?.email
         val role1 = intent.getStringExtra("Role")
-
+        val assign1 = findViewById<Button>(R.id.assign1)
         profilebtn.setOnClickListener {
             val intent = Intent(this, ViewProfile::class.java)
             intent.putExtra("Email",email1)
@@ -43,6 +43,11 @@ class StudentHome : AppCompatActivity() {
 
         updateinfobtn.setOnClickListener {
             val intent = Intent(this, EditProfile::class.java)
+            startActivity(intent)
+        }
+
+        assign1.setOnClickListener {
+            val intent = Intent(this, TaTasks::class.java)
             startActivity(intent)
         }
     }

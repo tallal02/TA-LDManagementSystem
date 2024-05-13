@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCDCDC">
@@ -23,15 +24,34 @@
 
     </LinearLayout>
 
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="100dp"
+        android:hint="Enter task query..."
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_toRightOf="@+id/editTextSearch"
+        android:layout_alignBottom="@+id/editTextSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search" />
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
 
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="180dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="498dp"
-        android:layout_weight="1">
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
             android:id="@+id/dynamicviews"
@@ -75,7 +95,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_profile"
-                    android:backgroundTint="#0E0E0E"/>
+                    android:backgroundTint="#0E0E0E"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -98,7 +119,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_home"
-                    android:backgroundTint="#070707"/>
+                    android:backgroundTint="#070707"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -121,7 +143,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_feedback"
-                    android:backgroundTint="#111212"/>
+                    android:backgroundTint="#111212"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -144,7 +167,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_tasks"
-                    android:backgroundTint="#090909"/>
+                    android:backgroundTint="#090909"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
