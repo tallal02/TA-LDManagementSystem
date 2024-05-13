@@ -55,9 +55,9 @@
             android:background="#DBD8DD">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                />
+                android:layout_width="150dp"
+                android:src="@drawable/assigntask"
+                android:layout_height="100dp" />
 
 
             <Button
@@ -78,7 +78,8 @@
             android:background="#DBD8DD">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
+                android:src="@drawable/updateinfo"
                 android:layout_height="100dp" />
 
 
@@ -99,7 +100,8 @@
             android:background="#DBD8DD">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
+                android:src="@drawable/manageta"
                 android:layout_height="100dp" />
 
 
@@ -120,7 +122,8 @@
             android:background="#DBD8DD">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
+                android:src="@drawable/feedbacklogo"
                 android:layout_height="100dp" />
 
 

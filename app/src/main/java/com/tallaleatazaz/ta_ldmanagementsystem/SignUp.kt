@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.Response
@@ -38,6 +39,14 @@ class SignUp : AppCompatActivity() {
         val passText = findViewById<EditText>(R.id.editTextPassword)
         val contactText = findViewById<EditText>(R.id.editTextContact)
 
+        val signin = findViewById<TextView>(R.id.login)
+
+        signin.setOnClickListener {
+            val intent = Intent(this,Login::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         val btnSignup = findViewById<Button>(R.id.buttonSignUp)
         btnSignup.setOnClickListener {
             if (!isSigningUp) {
@@ -54,7 +63,7 @@ class SignUp : AppCompatActivity() {
     }
 
     private fun signUp(email: String, name: String, pass: String, contact: String, role: String) {
-        val url = "http://192.168.18.237/signup.php"
+        val url = "http://10.0.2.2/signup.php"
         val requestQueue = Volley.newRequestQueue(this)
 
         val stringRequest = object : StringRequest(Request.Method.POST, url,
@@ -97,10 +106,14 @@ class SignUp : AppCompatActivity() {
                             .addOnSuccessListener {
                                 if (role == "Student") {
                                     val intent = Intent(this, StudentHome::class.java)
+                                    intent.putExtra("Email",email)
+                                    intent.putExtra("Role",role)
                                     startActivity(intent)
                                     finish()
                                 } else if (role == "Faculty") {
                                     val intent = Intent(this, FacultyHome::class.java)
+                                    intent.putExtra("Email",email)
+                                    intent.putExtra("Role",role)
                                     startActivity(intent)
                                     finish()
                                 }

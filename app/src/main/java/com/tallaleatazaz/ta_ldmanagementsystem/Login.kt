@@ -23,6 +23,24 @@ class Login : AppCompatActivity() {
         val loginbtn = findViewById<Button>(R.id.buttonLogin)
         // Set an OnClickListener to it
 
+        val stdGuest = findViewById<TextView>(R.id.studentGuest)
+
+        stdGuest.setOnClickListener {
+            val intent = Intent(this,stdGuestHome::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val fctGuest = findViewById<TextView>(R.id.facultyGuest)
+
+        fctGuest.setOnClickListener {
+            val intent = Intent(this,fctGuestHome::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
+
         loginbtn.setOnClickListener {
             val email= editEmail.text.toString()
             val pass = editPass.text.toString()
@@ -49,7 +67,7 @@ class Login : AppCompatActivity() {
                     val user = FirebaseAuth.getInstance().currentUser
                     if (user != null) {
                         // User is logged in, get user's role
-                        getUserRole(user.uid)
+                        getUserRole(user.uid,email)
                     }
                 } else {
                     // Login failed, display error message
@@ -62,7 +80,7 @@ class Login : AppCompatActivity() {
             }
     }
 
-    private fun getUserRole(userId: String) {
+    private fun getUserRole(userId: String , email :String) {
         // Retrieve user's role from Firestore based on userId
         val firestore = FirebaseFirestore.getInstance()
         firestore.collection("users").document(userId)
@@ -74,10 +92,14 @@ class Login : AppCompatActivity() {
                         // Navigate to respective screen based on user's role
                         if (userRole == "Student") {
                             val intent = Intent(this, StudentHome::class.java)
+                            intent.putExtra("Email",email)
+                            intent.putExtra("Role",userRole)
                             startActivity(intent)
                             finish()
                         } else if (userRole == "Faculty") {
                             val intent = Intent(this, FacultyHome::class.java)
+                            intent.putExtra("Email",email)
+                            intent.putExtra("Role",userRole)
                             startActivity(intent)
                             finish()
                         }

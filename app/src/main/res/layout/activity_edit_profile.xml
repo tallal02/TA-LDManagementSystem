@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:weightSum="7"
     android:background="#8B0000">
@@ -14,7 +15,7 @@
         android:gravity="center">
 
         <ImageView
-            android:id="@+id/imageViewBack"
+            android:id="@+id/backArr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back_arrow"
@@ -33,6 +34,22 @@
 
     </LinearLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-50dp"> <!-- Pull the FrameLayout up to overlap -->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/circleimage"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+    </FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -45,7 +62,7 @@
             android:id="@+id/nameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="0dp"
             android:layout_marginStart="20dp"
             android:text="Name"
             android:textColor="#F1E8E8"
@@ -62,26 +79,26 @@
             android:padding="12dp"
             android:inputType="textPersonName" />
 
-        <TextView
-            android:id="@+id/emailLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="20dp"
-            android:text="Email"
-            android:textColor="#FAF4F4"
-            android:textSize="16sp" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/emailLabel"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:text="Email"-->
+        <!--            android:textColor="#FAF4F4"-->
+        <!--            android:textSize="16sp" />-->
 
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/edittext_custom_background"
-            android:padding="12dp"
-            android:inputType="textEmailAddress" />
+        <!--        <EditText-->
+        <!--            android:id="@+id/editTextEmail"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="3dp"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginEnd="20dp"-->
+        <!--            android:background="@drawable/edittext_custom_background"-->
+        <!--            android:padding="12dp"-->
+        <!--            android:inputType="textEmailAddress" />-->
 
         <TextView
             android:id="@+id/passwordLabel"
@@ -122,8 +139,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/edittext_custom_background"
-            android:padding="12dp"
-            android:inputType="textPassword" />
+            android:padding="12dp"/>
+        <!--            android:inputType="textPassword" />-->
 
         <Button
             android:id="@+id/updatebutton"

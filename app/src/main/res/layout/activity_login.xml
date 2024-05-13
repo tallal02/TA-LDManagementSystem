@@ -85,22 +85,22 @@
         android:backgroundTint="#E6E6E5"
         android:background="@drawable/edittext_custom_background"/>
 
-    <TextView
-        android:id="@+id/textViewForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot your password?"
-        android:textColor="#FFA500"
-        android:layout_below="@id/editTextPassword"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"/>
+    <!--    <TextView-->
+    <!--        android:id="@+id/textViewForgotPassword"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Forgot your password?"-->
+    <!--        android:textColor="#FFA500"-->
+    <!--        android:layout_below="@id/editTextPassword"-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        android:layout_centerHorizontal="true"/>-->
 
     <Button
-            android:id="@+id/buttonLogin"
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:layout_below="@id/textViewForgotPassword"
+        android:layout_below="@id/editTextPassword"
         android:layout_marginTop="26dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -108,6 +108,26 @@
         android:padding="12dp"
         android:backgroundTint="#FFC470"
         android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/studentGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conitnue as Student Guest"
+        android:textColor="#FFA500"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/facultyGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conitnue as Faculty Guest"
+        android:textColor="#FFA500"
+        android:layout_below="@id/studentGuest"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/signup"

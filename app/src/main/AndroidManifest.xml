@@ -2,13 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:icon="@drawable/logo"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -16,7 +17,58 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".MyApp"
+            android:exported="false"
+            android:icon="@drawable/fastlogo"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".ViewTaskAllocation"
+            android:exported="false" />
+
+        <receiver
+            android:name=".NetworkStateReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+        <activity
             android:name=".TaTasks"
+            android:exported="false" /><activity
+            android:name=".fctGuestHome"
+            android:exported="false" /><activity
+            android:name=".gstEditProfile"
+            android:exported="false" /><activity
+            android:name=".gstGiveFeedBack"
+            android:exported="false" /><activity
+            android:name=".gstManageTA"
+            android:exported="false" /><activity
+            android:name=".gstTaTasks"
+            android:exported="false" /><activity
+            android:name=".gstViewProfile"
+            android:exported="false" /><activity
+            android:name=".GuestAssignTasks"
+            android:exported="false" /><activity
+            android:name=".stdGuestHome"
+            android:exported="false" /><activity
+            android:name=".gstTaFeedBack"
+            android:exported="false" />
+        <activity
+            android:name=".AssignTasks"
+            android:exported="false" />
+        <activity
+            android:name=".ManageTA"
             android:exported="false" />
         <activity
             android:name=".TAFeedback"
@@ -41,6 +93,9 @@
             android:exported="false" />
         <activity
             android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".ViewTaskAllocation"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

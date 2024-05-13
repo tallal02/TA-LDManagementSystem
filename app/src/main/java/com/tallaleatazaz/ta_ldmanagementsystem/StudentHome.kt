@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import com.google.firebase.auth.FirebaseAuth
 
 class StudentHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,9 +16,13 @@ class StudentHome : AppCompatActivity() {
         val feedbackbtn = findViewById<ImageButton>(R.id.feedbackbtn)
         val taskbtn = findViewById<ImageButton>(R.id.taskbtn)
         val updateinfobtn = findViewById<Button>(R.id.updateinfobtn)
+        val email1 = FirebaseAuth.getInstance().currentUser?.email
+        val role1 = intent.getStringExtra("Role")
 
         profilebtn.setOnClickListener {
             val intent = Intent(this, ViewProfile::class.java)
+            intent.putExtra("Email",email1)
+            intent.putExtra("Role",role1)
             startActivity(intent)
         }
 
@@ -32,7 +37,7 @@ class StudentHome : AppCompatActivity() {
         }
 
         taskbtn.setOnClickListener {
-            val intent = Intent(this, TaTasks::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
 

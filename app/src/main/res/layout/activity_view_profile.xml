@@ -18,7 +18,7 @@
         android:paddingBottom="20dp">
 
         <ImageView
-            android:id="@+id/imageViewBack"
+            android:id="@+id/backArr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back_arrow"
@@ -33,6 +33,16 @@
             android:textColor="#F4F0F0"
             android:layout_marginStart="-10dp"
             android:layout_marginTop="-35dp"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="150dp"
+            android:text="Logout"
+            android:layout_marginTop="-50dp"
+            android:backgroundTint="#872409"
+            />
 
     </LinearLayout>
 
@@ -73,12 +83,13 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/name1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_gravity="center"
             android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -94,12 +105,13 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/email1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_gravity="center"
             android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -115,12 +127,13 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/number1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_gravity="center"
             android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -136,19 +149,20 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/role1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_gravity="center"
             android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#FFFFFF"/>
 
         <Button
-            android:id="@+id/updatebutton"
+            android:id="@+id/editBtn"
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:text="Edit Profile"
